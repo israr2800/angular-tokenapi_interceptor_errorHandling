@@ -1,0 +1,20 @@
+<p>auth-dashboard works!</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>S.No.</th>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of productData; index as i">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.cost}}</td>
+        </tr>
+    </tbody>
+</table>

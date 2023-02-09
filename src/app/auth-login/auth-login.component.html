@@ -1,0 +1,8 @@
+<p>auth-login works!</p>
+
+<form [formGroup]="addForm">
+    <input type="text" formControlName="userid" [(ngModel)]="_userid" autocomplete="off" placeholder="userid"> <br>
+    <input type="password" formControlName="password" [(ngModel)]="_password" autocomplete="off" placeholder="password">
+
+    <button (click)="submitButton()" type="button">Submit</button>
+</form>
